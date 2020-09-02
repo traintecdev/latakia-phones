@@ -5,7 +5,7 @@
 	"background_color": "#d6d6d6",
 	"display": "standalone",
 	"orientation": "portrait",
-	"Scope": "/",
+	"Scope": "/latakia-phones/",
 	"start_url": "/",
 	"icons": [
 		{
