@@ -1,0 +1,8 @@
+{
+  "appId": "sy.traintec.latakia",
+  "appName": "latakiaNums",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

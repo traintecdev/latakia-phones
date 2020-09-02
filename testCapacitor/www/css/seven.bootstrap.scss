@@ -1,0 +1,57 @@
+
+
+// Custom.scss
+
+$primary: #005568;
+$secondary:#00adef;
+$success: #4a7d00;
+$info: #ff7800;
+$warning: #ffbe0f;
+$danger: #ff0000;
+$light: #d6d6d6;
+$dark: #2e2e2e;
+
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// droid arabic font
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body {
+    font-family: 'Droid Arabic Kufi', Arial, Tahoma, sans-serif ,serif ;
+}
+
+@include media-breakpoint-down(md) {
+    .custom-border {
+        border-top: 0 !important;
+        border-right: 0 !important;
+        border-left: 0 !important;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.dir-ltr {
+    direction: ltr !important;
+}
+
+@media all and (display-mode: standalone) {
+    #btnAddHs {
+      display: none;
+    }
+    .custom-padding {
+        padding-top: 3rem !important;
+    }
+}
+@include media-breakpoint-up(md) {
+    .extra-top-margin {
+        margin-top: 3rem !important;
+    }
+
+}

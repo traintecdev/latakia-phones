@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#d6d6d6">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/seven.bootstrap.min.css">
+    
+    <title>Latakia Phones Easy Converter</title>
+</head>
+
+<body class="bg-light text-primary text-right">
+    <main>
+        <div class="container-fluid mt-md-3">
+            <div class="row justify-content-center extra-top-margin">
+                <div
+                    class="col-12 col-md-6 font-weight-bold border border-secondary shadow-lg py-md-2 py-3 custom-border custom-padding">
+                    <div id="sixToSeven">
+                        <h1 class="font-weight-bolder text-center mb-3" style="font-size: 1.5rem;">
+                            حول بسهولة رقمك السداسي إلى سباعي!
+                        </h1>
+                        <small class="text-muted text-center d-block">لمشتركي الهاتف الأرضي في اللاذقية وريفها</small>
+                        <small class="text-center text-secondary d-block mb-3">مقدم من معهد درب التقنية Traintec</small>
+
+
+                        <label for="inputNumber">أدخل رقم الهاتف القديم:</label>
+                        <input type="text" class="form-control text-center font-weight-bold dir-ltr" id="inputNumber"
+                            maxlength="6">
+                        <div class="my-2">
+                            <strong>الرقم السباعي الجديد: </strong>
+
+                            <div class="text-center text-success font-weight-bolder my-1 display-4 dir-ltr"
+                                id="resultNumber">...
+                            </div>
+                            <div class="text-center">
+
+                                <button class="btn btn-warning copyBtn font-weight-bold pr-4"
+                                    data-clipboard-target="#resultNumber">نسخ <img class="" src="imgs/copy.svg"
+                                        alt="call" width="30rem"></button>
+                                <a href="#" id="callBtn" class="btn btn-success font-weight-bold text-white pr-4"> اتصال
+                                    <img class="pb-1 px-2 pt-2" src="imgs/call.svg" alt="call"></a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <strong>المقسم الذي يتبع له: </strong>
+
+                            <div class="text-center text-success font-weight-bolder my-1" id="resultCentral">...</div>
+                        </div>
+                        <button id="btnAddHs" class="btn btn-primary btn-block">ثبت التطبيق للعمل دون اتصال
+                            <br>
+                            <small class="text-secondary">يجب فتح الرابط من Google Chrome</small>
+                        </button>
+
+                        <button class="btn btn-warning btn-block font-weight-bold" id="reverseBtn1"> تحويل عكسي من سباعي <img
+                                class="" src="imgs/reverse.svg" alt="reverse" width="25rem">
+                        </button>
+                    </div>
+
+                    <div id="sevenToSix" style="display:none;">
+                        <h1 class="font-weight-bolder text-center mb-3" style="font-size: 1.5rem;">
+                            التحويل العكسي للرقم السباعي الجديد إلى السداسي القديم!
+                        </h1>
+                        <small class="text-center text-secondary d-block">مقدم من معهد درب التقنية Traintec</small>
+                        <small class="text-center text-secondary d-block mb-3">وكيل لمزود الإنترنت زاد في اللاذقية
+                            وريفها</small>
+
+
+                        <label for="inputSevenNumber">أدخل رقم الهاتف السباعي:</label>
+                        <input type="text" class="form-control text-center font-weight-bold dir-ltr"
+                            id="inputSevenNumber" maxlength="7">
+                        <div class="my-2">
+                            <strong>الرقم السداسي القديم: </strong>
+
+                            <div class="text-center text-success font-weight-bolder my-1 display-4 dir-ltr"
+                                id="resultSevenNumber">...
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-warning copyBtn font-weight-bold pr-4"
+                                    data-clipboard-target="#resultSevenNumber">نسخ <img class="" src="imgs/copy.svg"
+                                        alt="call" width="30rem"></button>
+                                <button class="btn btn-primary font-weight-bold py-2"
+                                    id="backBtn">عودة</button>
+                            </div>
+
+                        </div>
+                        <div>
+                            <strong>المقسم الذي يتبع له: </strong>
+
+                            <div class="text-center text-success font-weight-bolder my-1" id="resultSevenCentral">...
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="row justify-content-center my-2">
+                <div class="col-12 col-md-6 text-center">
+                    <small>ملاحظة: هذه التطبيق فقط لتسهيل عملية التحويل بين الأرقام، ويبقى المرجع الأول للمعلومات الموقع
+                        الرسمي للسورية للاتصالات:</small>
+                    <a href="http://syriantelecom.com.sy/" target="_blank">syriantelecom.com.sy</a>
+
+                    <div class="text-center">
+                        <img src="imgs/traintec.png" class="img-fluid mt-2" alt="">
+                        <div class="mt-2">
+                            <a href="https://www.facebook.com/traintec.latakia" target="_blank"
+                                class="text-decoration-none text-dark font-weight-bold">
+                                معهد درب التقنية :: Traintec <img src="imgs/facebook.svg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="my-1">
+                            <a href="https://www.instagram.com/traintec.latakia" target="_blank"
+                                class="text-decoration-none text-dark font-weight-bold">
+                                معهد درب التقنية :: Traintec <img src="imgs/instagram.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <small class="text-muted">في حال وجود أية ملاحظة على هذا التطبيق يرجى التواصل معنا عبر
+                                صفحتنا على فيسبوك</small>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+        var copyjs = new ClipboardJS('.copyBtn');
+        copyjs.on('success', function (e) {
+            e.clearSelection();
+        });
+    </script>
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js');
+            });
+        }
+    </script>
+    <script>
+        let btnAdd = $('#btnAddHs');
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can add to home screen
+            btnAdd.css('display', 'block');
+        });
+
+        btnAdd.on('click', (e) => {
+            // hide our user interface that shows our A2HS button
+            btnAdd.css('display', 'none');
+            // Show the prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice
+                .then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    } else {
+                        console.log('User dismissed the A2HS prompt');
+                    }
+                    deferredPrompt = null;
+                });
+        });
+
+
+    </script>
+</body>
+
+</html>
